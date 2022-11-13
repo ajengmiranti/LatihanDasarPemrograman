@@ -1,0 +1,51 @@
+print("Authorized by : Ajeng Miranti") 
+print("ASSIGNMENT CONDITION OF LOOPING")
+
+print("=== Program Aplikasi Penghitung Rumus ===") 
+
+def Luas_Segitiga():
+    print("=== Program Aplikasi Penghitung Rumus ===") 
+    print("Menghitung Luas Segitiga") 
+    
+    alas = int(input("Masukkan Alas : "))
+    tinggi = int(input("Masukkan Tinggi : "))
+    
+    print("Luas : ", 1/2 * alas * tinggi)
+
+def Luas_Persegi_Panjang():
+    print("=== Program Aplikasi Penghitung Rumus ===") 
+    print("Menghitung Luas Persegi Panjang") 
+    
+    panjang = int(input("Masukkan Panjang : "))
+    lebar = int(input("Masukkan Lebar : "))
+    
+    print("Luas : ", panjang * lebar)
+    
+def Bilangan_Ganjil_Genap():
+    print("=== Program Aplikasi Penghitung Rumus ===")
+    print("Menentukan Bilangan Ganjil Genap") 
+    
+    awal = int(input('Masukan Nilai Awal: '))
+    akhir = int(input('Masukan Nilai Akhir: '))
+    Ganjil = []
+    Genap = []
+    for i in range(awal, akhir+1):
+        if i % 2 == 1:
+          Ganjil.append(i)
+        if i % 2 == 0:
+          Genap.append(i)
+    print('Bilangan Ganjil: ', Ganjil,)
+    print('Bilangan Genap: ', Genap,)
+
+while True:
+    userInput = int(input(
+        "MENU : \n1. Luas Segitiga\n2. Luas Persegi Panjang\n3. Menentukan Angka Ganjil Genap\n4. Quit\nPilih Nomer: "))
+    if (userInput == 1):
+        Luas_Segitiga()
+    elif (userInput == 2):
+        Luas_Persegi_Panjang()
+    elif (userInput == 3):
+        Bilangan_Ganjil_Genap()
+    else:
+        break
+    
